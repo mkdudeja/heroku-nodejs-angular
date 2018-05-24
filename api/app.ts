@@ -8,7 +8,7 @@ const port =  process.env.PORT || 8080;
 app.use(express.static(__dirname + '/public'));
 
 app.get('/api', function (req, res) {
-    res.send('Hello World!');
+    res.send('Hello World, How are you!');
 });
 
 // For all GET requests, send back index.html
