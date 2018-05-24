@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '8'
+install:
+- npm install
+script:
+- npm run build
+deploy:
+  provider: heroku
+  api_key:
+    secure: gdj/G+crtwEjhYlIoPoRsTiG93Z1verzAD06arPV1inLDaOAMEltEmAebJYArZtJ+V7wqiO6YJ2Q/IvHYEfSXUOmVqYbxhrdrOwo88Z9/AXyi3jrhn9OxboEzo/cwn4BOR4lEVw+YLQv9wqVbAJ9ZZxJDFvB0GFfdtnkXzzEmPhPo6RZufluCoKon5+QEvXVLpHJjZ97Staat4RXEsZVA1jTbdYj8U08G8isYOMKckeIPS9fBZiUBYuS1JjrtGHsR5JoPi8d0G/qY4VgrNQRs7KFBriSjGru5EBlRNhD+FJAqJwgizikS73yKHhSM4qCTq6e+8V7gytho1pbD1krhzYD9FOLkFkAsByg6mJFOrOe24aWl2iI6AqnEBHoGS81um29yqAqkyP6lrjwUrZR8FxO3sxFXwEqjFHbw+Yp385apih9++BC/tcPSnd0GoRGjy8oglcCJqDrTe5jLhCFroj6Nb4k8S6i1PQVC9Y7nljYoWclzO2eQj1rr3hOtW5TT5R6t1vw3ZrBuqo/vMD6tzSSsoSJCrXD9YSSAs/xLg7/TndDC911D2Uj3udc5pCrMTTYOSUJ1jendkfph8/Xeg/W5NfYB9qr45PyGkww6IcSKbPbqNGqciMSMlIMz97gJWGGUIH58RMbXiPoks+m2VzRM4fS8yBz/7hRyPK/GBw=
+  app: heroku-nodejs-angular
+  on:
+    repo: mkdudeja/heroku-nodejs-angular
